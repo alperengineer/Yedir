@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".activities.StartScreen">
+
+    <ScrollView
+        android:id="@+id/startScreenScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/startScreenLogoImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/logo1" />
+
+            <TextView
+                android:id="@+id/startScreenAppName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poetsen"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/yellow"
+                android:textSize="52sp" />
+
+            <TextView
+                android:id="@+id/startScreenSloganText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/start_screen_slogan"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/startScreenSıgnUpBtn"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:text="@string/start_screen_btn_text"
+                android:background="@drawable/btn_bg"
+                android:textSize="24sp"
+                android:onClick="signUp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poetsen"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/startScreenSıgnIn"
+                android:textSize="16sp"
+                android:onClick="signIn"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="@string/start_screen_sign_in"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
