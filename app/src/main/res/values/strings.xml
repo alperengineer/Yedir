@@ -10,4 +10,5 @@
     <string name="passwordStr">Parola</string>
     <string name="signUp">Kayıt Ol</string>
     <string name="phoneNumberStr">Telefon Numarası</string>
+    <string name="signIn">Giriş Yap</string>
 </resources>
