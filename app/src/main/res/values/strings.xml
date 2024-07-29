@@ -3,4 +3,11 @@
     <string name="start_screen_slogan">Taze &amp; Ucuz Alışveriş</string>
     <string name="start_screen_btn_text">Haydi Alışverişe</string>
     <string name="start_screen_sign_in">"Hesabın var mı?<font color="#F3C024"> Giriş Yap</font>"</string>
+    <string name="firstNameStr">Adınız</string>
+    <string name="lastNameStr">Soyadınız</string>
+    <string name="emailStr">Email</string>
+    <string name="birthDateStr">Doğum Tarihi</string>
+    <string name="passwordStr">Parola</string>
+    <string name="signUp">Kayıt Ol</string>
+    <string name="phoneNumberStr">Telefon Numarası</string>
 </resources>

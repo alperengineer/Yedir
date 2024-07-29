@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/startScreen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
@@ -48,33 +48,31 @@
                 android:textSize="24sp" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/startScreenSignUpBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/startScreenSıgnUpBtn"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="32dp"
-                android:text="@string/start_screen_btn_text"
                 android:background="@drawable/btn_bg"
-                android:textSize="24sp"
-                android:onClick="signUp"
-                android:textAllCaps="false"
                 android:fontFamily="@font/poetsen"
-                android:textColor="@color/blue" />
+                android:text="@string/start_screen_btn_text"
+                android:textAllCaps="false"
+                android:textColor="@color/blue"
+                android:textSize="24sp" />
 
             <TextView
+                android:id="@+id/startScreenSignIn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/startScreenSıgnIn"
-                android:textSize="16sp"
-                android:onClick="signIn"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
                 android:fontFamily="@font/poppins"
-                android:textColor="@color/white"
+                android:text="@string/start_screen_sign_in"
                 android:textAlignment="center"
-                android:text="@string/start_screen_sign_in"/>
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
         </LinearLayout>
 
